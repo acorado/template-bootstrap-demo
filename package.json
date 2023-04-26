@@ -3,14 +3,14 @@
     "name": "startbootstrap-personal",
     "version": "1.0.1",
     "scripts": {
-        "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
+        "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets -p 8080",
         "build:assets": "node scripts/build-assets.js",
         "build:pug": "node scripts/build-pug.js",
         "build:scripts": "node scripts/build-scripts.js",
         "build:scss": "node scripts/build-scss.js",
         "clean": "node scripts/clean.js",
-        "start": "npm run build && node scripts/start.js",
-        "start:debug": "npm run build && node scripts/start-debug.js"
+        "start": "npm run build && node scripts/start.js -p 8080",
+        "start:debug": "npm run build && node scripts/start-debug.js -p 8080"
     },
     "description": "A personal website template built with Bootstrap",
     "keywords": [
