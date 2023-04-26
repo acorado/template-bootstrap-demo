@@ -10,7 +10,7 @@ COPY . .
 RUN npm install
 
 # Expone el puerto 3000
-EXPOSE 3000/8080
+EXPOSE 8080:3000
 
 # Inicia la aplicación
 CMD [ "npm", "start" ]
